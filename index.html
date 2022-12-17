@@ -1,0 +1,82 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agente do Futuro</title>
+</head>
+
+<body>
+
+    <thead>
+        <div class="div_navbar">
+
+            <div class="div_logo">
+                <img src="assets/logo.png">
+            </div>
+            <div class="div_opcoes">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicial</a>
+                    </li>
+                    <li>
+                        <a href="lista.html">Matérias</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="div_user">
+                <button id="nome" onclick="Modal()">entrar</button>
+                <img id="foto" onclick="Modal()" src="assets/user.png">
+            </div>
+        </div>
+    </thead>
+
+    <div class="div_login" id="modal">
+        <span>usuário:</span>
+        <input type="text" id="usuario">
+        <span>senha:</span>
+        <input type="password" id="senha">
+        <span id="erro">*usuario ou senha incorretos*</span>
+        <button onclick="Entrar()">entrar</button>
+        <img onclick="Modal()" src="assets/x.png">
+    </div>
+
+    <tbody>
+
+    </tbody>
+
+    <tfoot>
+
+    </tfoot>
+
+</body>
+
+</html>
+
+<script>
+
+    function Modal() {
+        if(modal.style.display == 'none'){
+            modal.style.display = "flex";
+        } else {
+            modal.style.display = "none";
+        }
+    }
+
+    function Entrar(){
+
+        login = usuario.value == "gabi" && senha.value == "1234";
+
+        if(login){
+            erro.style.display = 'none';
+            foto.src = "assets/billy.png";
+            nome.innerHTML = "jorge";
+        } else {
+            erro.style.display = 'block';
+        }
+    }
+
+
+</script>
