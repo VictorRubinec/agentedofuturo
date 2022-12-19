@@ -176,3 +176,10 @@ body{
     font-size: 18px;
 }
 
+.titulo{
+    display: flex;
+}
+
+.titulo img{
+    height: 200px;
+}
