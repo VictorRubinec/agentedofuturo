@@ -21,9 +21,6 @@
                     <li>
                         <a href="index.html">Inicial</a>
                     </li>
-                    <li>
-                        <a href="lista.html">Matérias</a>
-                    </li>
                 </ul>
             </div>
             <div class="div_user">
@@ -31,25 +28,70 @@
                 <img id="foto" onclick="Modal()" src="assets/user.png">
             </div>
         </div>
+        <div class="div_login" id="modal">
+            <span>usuário:</span>
+            <input type="text" id="usuario">
+            <span>senha:</span>
+            <input type="password" id="senha">
+            <span id="erro">*usuario ou senha incorretos*</span>
+            <button onclick="Entrar()">entrar</button>
+            <img onclick="Modal()" src="assets/x.png">
+        </div>
     </thead>
-
-    <div class="div_login" id="modal">
-        <span>usuário:</span>
-        <input type="text" id="usuario">
-        <span>senha:</span>
-        <input type="password" id="senha">
-        <span id="erro">*usuario ou senha incorretos*</span>
-        <button onclick="Entrar()">entrar</button>
-        <img onclick="Modal()" src="assets/x.png">
-    </div>
 
     <tbody>
 
+        <div class="div_sobre">
+            <div class="div_sobre_texto">
+                <p>Oi, eu sou o agente do futuro, seu mais novo informante sobre o paranormal. Eu criei esse site para
+                    espalhar informação e preparar vocês, meus telespectadores, para o apocalipse que está por vir. Aqui
+                    você vai ver histórias vividas por mim, e pesquisas também feitas por mim.
+                    Lembre-se, eles estão te observando, e querem que você não saiba disso, fique atento. Espero vocês
+                    nos meus próximos relatos.
+                    Ass: Agente do Futuro.</p>
+            </div>
+            <div class="div_sobre_img">
+                <img src="assets/bilu.PNG">
+            </div>
+        </div>
+
+        <div class="div_barra">
+            <h1>NOVO!</h1>
+        </div>
+
+        <div class="div_materia">
+            <h2>CACHÓRROS VERDIS</h2>
+
+            <audio autoplay="autoplay" controls="controls">
+                <source src="assets/cachorros.ogg" type="audio/ogg"/>
+                seu navegador não suporta HTML5
+            </audio>
+
+            <p>Muito bom dia, muito boa tarde e muito boa noite para todos os meus telespectadores. Aqui quem fala é o
+                agente do futuro, mais uma vez registrando mais uma de minhas descobertas.</p>
+            <p>Hoje um morador da minha cidade foi atacado por um cachorro, mas não era apenas um cachorro, o animal foi
+                modificado pelo governo por meios paranormais. O paranormal deixou o cachorro verde, isso mesmo minha
+                gente, VERDE!! A pele, os pelos, tudo verde!! Eu tive que confirmar isso, ver se foi o paranormal, ou
+                uma brincadeira de mau gosto. Mas eu tive a confirmação vendo os olho do bicho, eles brilhavam e rosa,
+                azul e roxo.</p>
+            <p>O bicho era totalmente agressivo, me atacou só de me ver, mas eu consegui neutralizá-lo sem nenhuma
+                complicação. Mais uma vez os trabalhado fazendo o trabalho do governo, que é potreger os outro
+                trabalhado.
+            </p>
+            <p>Infelizmente o cachorro era mãe de três cachórros. Eu só consegui resgatar um deles, e esse é o Billy,
+                meu novo companheiro de investigação.
+            </p>
+            <p>Voltando ao assunto principal, o paranormal afetou a criatura através de um vírus. O vírus transforma os
+                infectados em criaturas bizarras, e esse cachorro estava em meio de uma transformação. Como o bicho foi
+                neutralizado, acho que o vírus não ta mais circulando. Irei trazer atualizações sobre esse vírus, que eu
+                tenho certeza que foi o governo que comprou, pra fazer outra pandemia, como a do COVID-19, pra deixar o
+                povo na miséria, e beneficiar os farmacêuticos.
+            </p>
+            <p>É isso, espero vocês no meu próximo relato, boa noite.
+            </p>
+        </div>
+
     </tbody>
-
-    <tfoot>
-
-    </tfoot>
 
 </body>
 
@@ -58,21 +100,24 @@
 <script>
 
     function Modal() {
-        if(modal.style.display == 'none'){
+        if (modal.style.display == 'none') {
             modal.style.display = "flex";
         } else {
             modal.style.display = "none";
         }
     }
 
-    function Entrar(){
+    function Entrar() {
 
-        login = usuario.value == "gabi" && senha.value == "1234";
+        login =
+            usuario.value == "tutuzito@hotmail.com"
+            &&
+            senha.value == "zé2203";
 
-        if(login){
+        if (login) {
             erro.style.display = 'none';
             foto.src = "assets/billy.png";
-            nome.innerHTML = "jorge";
+            nome.innerHTML = "Tutuzito";
         } else {
             erro.style.display = 'block';
         }

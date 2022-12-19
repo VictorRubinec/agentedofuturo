@@ -4,6 +4,10 @@
     font-family: 'Comic Sans MS';
 }
 
+body{
+    background-color: #d4ffcd;
+}
+
 .div_navbar {
     height: 60px;
     background-color: #105205;
@@ -126,3 +130,49 @@
     padding: 3px;
     color: rgb(120, 0, 0);
 }
+
+.div_sobre{
+    display: flex;
+    padding: 20px;
+}
+
+.div_sobre_texto{
+    width: 70%;
+    font-size: 20px;
+    text-indent: 10px;
+    margin-right: 50px;
+    padding-right: 30px;
+    text-align: justify;
+    border-right: #4F594E 1px solid;
+}
+
+.div_sobre_img img{
+    width: 200px;
+}
+
+.div_barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #612200;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.div_materia{
+    padding: 10px;
+}
+
+.div_materia h2{
+    font-size: 25px;
+    border-bottom: #4F594E 1px solid;
+    width: 300px;
+    margin: 15px;
+}
+
+.div_materia p{
+    text-indent: 10px;
+    font-size: 18px;
+}
+
